@@ -7,6 +7,6 @@
     force = true
 
 [[headers]]
-  for = "/*"
-    [headers.values]
-    Access-Control-Allow-Origin = *  
+for = "/*"
+[headers.values]
+Access-Control-Allow-Origin = "*" 
