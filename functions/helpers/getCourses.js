@@ -12,6 +12,6 @@ module.exports = async (event) => {
     } 
     catch(err) {
         console.error(err);
-        return formattedReturn(500, { msg: 'Something went rong' });
+        return formattedReturn(500, { msg: 'Something went wrong' });
     }
 };
