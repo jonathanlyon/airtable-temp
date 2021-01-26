@@ -8,16 +8,7 @@ module.exports = async (event) => {
             id: course.id,
             ...course.fields,
         }));
-        return formattedReturn(
-            {
-                headers: {
-                  "Access-Control-Allow-Origin": "*"
-                },
-                statusCode: 200,
-                body: formattedCourses
-              });
-            
-            
+        return formattedReturn(200, formattedCourses);
     } 
     catch(err) {
         console.error(err);
