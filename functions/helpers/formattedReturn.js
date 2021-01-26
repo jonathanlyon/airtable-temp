@@ -1,6 +1,10 @@
 module.exports = (statusCode, body) => {
-    return {
-        statusCode,
-        body: JSON.stringify(body),
+    return {  
+        headers: {
+          "Access-Control-Allow-Origin": "*"
+        },
+        statusCode: 200,
+        body: JSON.stringify(body)
+      };
+
     };
-};
