@@ -10,7 +10,7 @@ const getWebhook = require('./helpers/getWebhook');
 const getLoginstatus = require('./helpers/getLoginstatus');
 
 exports.handler = async (event) => {
-    // TODO: call appropriate helper function based on HTTP method
+    // TODO: call appropriate helper function based on HTTP method  
      if(event.httpMethod = 'PUT') {
          return await getLoginstatus(event);
      } else {
